@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Reading List App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="city" class="primary">city</label>
+          <input type="text" id="city" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="country" class="primary">Country</label>
+          <input type="text" id="country" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">Type of Holiday</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Family">Family</option>
+            <option value="City Break">City Break</option>
+            <option value="Business">Businesst</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+      <button id="delete-all">Delete All</button>
+
+
+    <h1>Planned Holidays</h1>
+    <div id="holiday-list"></div>
+  </body>
+</html>
